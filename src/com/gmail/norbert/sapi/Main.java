@@ -5,6 +5,7 @@ public class Main {
         // initialising the variables
         int countStart = 4;
         int counterEnd = 20;
+        int fiveEven = 0;
 
         // while loop - counter
         while (countStart < counterEnd) {
@@ -13,6 +14,13 @@ public class Main {
                 continue;
             }
             System.out.println("flow: " + countStart);
+
+            // this extra block stops the program, when we find 5 even number
+            //BREAK OUT if 5 even number is found.
+            fiveEven++;
+            if (fiveEven == 5) {
+            break;
+            }
         }
         System.out.println("last number " + countStart);
     }
